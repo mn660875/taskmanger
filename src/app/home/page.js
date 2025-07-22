@@ -65,14 +65,14 @@ export default function Page() {
                 <div className="flex items-center justify-between bg-gray-50 p-2 rounded-lg">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/img/user.jpg"
-                      alt="John Doe"
+                      src="/img/1.jpg"
+                      alt="Chaudhary Usman"
                       width={42}
                       height={42}
                       className="w-10 h-10 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-semibold text-sm">Donna Paulsen</p>
+                      <p className="font-semibold text-sm">Chaudhary Usman</p>
                       <p className="text-xs text-gray-500">
                         Project meeting scheduled for tomorrow. Looking forward
                         to getting started!
@@ -88,14 +88,14 @@ export default function Page() {
                 <div className="flex items-center justify-between bg-black text-white p-2 rounded-lg">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/img/user.jpg"
-                      alt="John Doe"
+                      src="/img/2.jpg"
+                      alt="Shoaib"
                       width={42}
                       height={42}
                       className="w-10 h-10 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-semibold text-sm">Jessica Pearson</p>
+                      <p className="font-semibold text-sm">Shoaib Akhtar</p>
                       <p className="text-xs text-gray-200">
                         Great news! The development phase is complete. Moving on
                         to testing.
@@ -111,14 +111,14 @@ export default function Page() {
                 <div className="flex items-center justify-between bg-gray-50 p-2 rounded-lg">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/img/user.jpg"
-                      alt="John Doe"
+                      src="/img/3.jpg"
+                      alt="Ahmad Safdar"
                       width={42}
                       height={42}
                       className="w-10 h-10 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-semibold text-sm">Mike Ross</p>
+                      <p className="font-semibold text-sm">Ahmad Safdar</p>
                       <p className="text-xs text-gray-500">
                         Client feedback incorporated. Finalizing the design
                         elements now.
@@ -134,14 +134,14 @@ export default function Page() {
                 <div className="flex items-center justify-between bg-gray-50 p-2 rounded-lg">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/img/user.jpg"
-                      alt="John Doe"
+                      src="/img/4.jpg"
+                      alt="Naeem Farman"
                       width={42}
                       height={42}
                       className="w-10 h-10 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-semibold text-sm">John Doe</p>
+                      <p className="font-semibold text-sm">Naeem Farman</p>
                       <p className="text-xs text-gray-500">
                         Please review the attached document for updates.
                       </p>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import { IoIosArrowDown } from "react-icons/io";
-import Grid from "./Grid";
+
 
 export default function Dashboard() {
   return (

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { IoHomeOutline, IoLogOutOutline, IoMailOpenOutline, IoSettingsOutline, IoStatsChartOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
-import { BiSolidDashboard } from "react-icons/bi";
+
 
 export default function Navbar() {
   return (
@@ -21,15 +21,20 @@ export default function Navbar() {
             </div>
           </Link>
 
+         
+          <Link href={"/statistics"}>
           <div className="flex items-center border-l-4 border-[#FA6E6C] gap-3 p-3 hover:bg-gray-200 cursor-pointer">
             <IoStatsChartOutline className="text-2xl" />
             <span className="text-lg font-semibold">Statistics</span>
-          </div>
+          </div></Link>
 
+        
+          <Link href={"#"}>
           <div className="flex items-center border-l-4 border-[#FA6E6C] gap-3 p-3 hover:bg-gray-200 cursor-pointer">
             <IoMailOpenOutline className="text-2xl" />
             <span className="text-lg font-semibold">Messages</span>
           </div>
+          </Link>
 
          
           <Link href={"/profile"}>
