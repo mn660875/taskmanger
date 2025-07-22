@@ -13,7 +13,6 @@ import {
   Cell,
   Legend,
 } from "recharts";
-import Navbar from "../components/Navbar";
 
 const lineData = [
   { name: "Jan", users: 400 },
@@ -34,9 +33,6 @@ const COLORS = ["#22c55e", "#3b82f6", "#facc15"];
 
 export default function Page() {
   return (
-    <div className="flex min-h-screen">
-        <Navbar/>
-    
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
       {/* Line Chart */}
       <div className="bg-white rounded-2xl p-6 shadow-md w-full h-[400px]">
@@ -76,7 +72,6 @@ export default function Page() {
           </PieChart>
         </ResponsiveContainer>
       </div>
-    </div>
     </div>
   );
 }
