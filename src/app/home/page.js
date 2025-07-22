@@ -1,18 +1,42 @@
+"use client"
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import { MdOutlineDoneOutline, MdPending } from "react-icons/md";
 import { TbCalendarDue } from "react-icons/tb";
 import { FaClock } from "react-icons/fa6";
 import { MdIncompleteCircle } from "react-icons/md";
+import { useEffect, useState } from "react";
+
 
 export default function Page() {
+    const [greeting, setGreeting] = useState("");
+
+    useEffect(() => {
+      const getGreeting = () => {
+        const hour = new Date().getHours();
+        if (hour >= 5 && hour < 12) {
+          return "Good Morning 🌅";
+        } else if (hour >= 12 && hour < 17) {
+          return "Good Afternoon ☀️";
+        } else if (hour >= 17 && hour < 21) {
+          return "Good Evening 🌇";
+        } else {
+          return "Good Night 🌙";
+        }
+      };
+  
+      setGreeting(getGreeting());
+    }, []);
+
+
+
   return (
     <div className="flex h-screen">
       <Navbar />
       <div className="flex-1 bg-[#F5E4E5] p-6 overflow-y-auto">
         <div className="w-full flex justify-between">
           <h1 className="text-3xl tracking-tight font-bold">
-            Good Morning, Nasir!
+            {greeting} Nasir!
           </h1>
           <div className="flex items-center space-x-2">
             <Image
