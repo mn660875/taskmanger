@@ -2,18 +2,21 @@
 import Link from "next/link";
 import { IoHomeOutline, IoLogOutOutline, IoMailOpenOutline, IoSettingsOutline, IoStatsChartOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
+import { MdDashboard } from "react-icons/md";
 
 
 export default function Navbar() {
   return (
     <div className="w- min-h-screen w-40 flex flex-col justify-between">
+  <div className="flex items-center  justify-center px-5">
+    <MdDashboard className="text-6xl text-[#FF91AF] " />
       
-      {/* Logo */}
+    </div>
       <div>
         
 
         {/* Navigation */}
-        <nav className="flex flex-col gap-2 pt-4">
+        <nav className="flex flex-col gap-2 pt-2">
           <Link href="/home">
             <div className="flex items-center border-l-4 border-[#FA6E6C] gap-3 p-3 hover:bg-gray-200 cursor-pointer">
               <IoHomeOutline className="text-2xl" />
@@ -29,7 +32,7 @@ export default function Navbar() {
           </div></Link>
 
         
-          <Link href={"#"}>
+          <Link href={"messages"}>
           <div className="flex items-center border-l-4 border-[#FA6E6C] gap-3 p-3 hover:bg-gray-200 cursor-pointer">
             <IoMailOpenOutline className="text-2xl" />
             <span className="text-lg font-semibold">Messages</span>
